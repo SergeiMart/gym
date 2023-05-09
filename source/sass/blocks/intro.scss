@@ -1,0 +1,174 @@
+.intro {
+  padding: 51px 0;
+  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
+
+  &__container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  & p {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    color: #ffffff;
+    margin: 0;
+    margin-right: 15px;
+    margin-left: 20px;
+    margin-top: 116px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-right: 63px;
+  }
+
+  & span {
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin-right: 51px;
+    margin-bottom: 15px;
+  }
+
+  & h1 {
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 92px;
+    line-height: 110px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 48px;
+  }
+
+  & button {
+    background-color: transparent;
+    border: 4px solid #ffffff;
+    box-sizing: border-box;
+    width: 233px;
+    min-height: 57px;
+    justify-content: center;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 19px;
+    margin-left: auto;
+    margin-bottom: 44px;
+  }
+}
+
+@include vp-1199 {
+  .intro {
+    padding: 82px 0 62px;
+
+    &__container {
+      justify-content: space-between;
+    }
+
+    &__info {
+      margin-right: 28px;
+      justify-content: center;
+      padding-top: 48px;
+    }
+
+    & span {
+      font-size: 34px;
+      line-height: 41px;
+      margin-bottom: 9px;
+      margin-right: 4px;
+    }
+
+    & h1 {
+      font-size: 72px;
+      line-height: 86px;
+      margin-bottom: 36px;
+      text-transform: lowercase;
+      letter-spacing: 0.04em;
+    }
+
+    & p {
+      margin-top: 25px;
+      margin-left: 1px;
+      margin-right: 17px;
+      min-width: 113px;
+    }
+
+    & button {
+      width: 186px;
+    }
+  }
+}
+
+@include vp-767 {
+  .intro {
+    padding: 80px 0 140px;
+
+    &__container {
+      justify-content: space-between;
+      position: relative;
+    }
+
+    &__info {
+      margin-right: 0;
+      margin-left: -15px;
+      padding-top: 28px;
+    }
+
+    & h1 {
+      margin-bottom: 22px;
+      letter-spacing: 0.04em;
+    }
+
+    & span {
+      font-size: 28px;
+      line-height: 34px;
+      margin-bottom: 14px;
+      margin-right: 6px;
+    }
+
+    & p {
+      margin: 0;
+      margin-top: 98px;
+    }
+
+    &__img {
+      display: none;
+    }
+
+    & button {
+      min-width: 290px;
+      width: 92%;
+      position: absolute;
+      bottom: -63px;
+      right: 14px;
+      left: 15px;
+      min-height: 62px;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,251 @@
+.gym {
+  padding: 120px 0 235px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+  }
+
+  &__img {
+    width: 660px;
+    height: 401px;
+
+    & img {
+      width: 660px;
+      height: 401px;
+    }
+  }
+
+  &__info {
+    padding-left: 60px;
+    width: 30.3vw;
+    max-width: 415px;
+
+    & span {
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: #102654;
+      margin-bottom: 39px;
+    }
+
+    & p {
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: #102654;
+      margin-bottom: 8px;
+      margin-top: 0;
+
+      span {
+        font-weight: 300;
+        font-size: 16px;
+        margin: 0;
+      }
+    }
+  }
+
+  & h2 {
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #102654;
+    margin-bottom: 6px;
+  }
+
+  &__video {
+    position: absolute;
+    width: 364px;
+    height: 228px;
+    bottom: -115px;
+    right: 33.5%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(20, 54, 122, 0.5);
+    }
+  }
+
+  & button {
+    position: absolute;
+    background: transparent;
+    border: 0;
+    top: 28%;
+    left: 36%;
+    display: inline-flex;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 1;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  & iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+@include vp-1199 {
+  .gym {
+    padding: 100px 0 183px;
+
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      gap: 27px;
+    }
+
+    &__info {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 65.36vw;
+      transform: translateX(-8px);
+      max-width: none;
+    }
+
+    & h2 {
+      margin: 0;
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    & span {
+      margin-bottom: 34px;
+    }
+
+    &__img {
+      width: auto;
+      height: auto;
+
+      & img {
+        width: auto;
+        height: auto;
+      }
+    }
+
+    & p {
+      text-align: center;
+
+      & span {
+        display: none;
+      }
+    }
+
+    &__video {
+      width: 266px;
+      height: 167px;
+      bottom: -83px;
+      align-items: center;
+      right: auto;
+    }
+
+    & button {
+      top: 28%;
+      left: 36%;
+
+      & img {
+        width: 73px;
+        height: 73px;
+      }
+    }
+  }
+}
+
+@include vp-767 {
+  .gym {
+    padding: 65px 0 70px;
+
+    &__container {
+      padding: 0;
+      gap: 17px;
+    }
+
+    &__info {
+      transform: translateX(0);
+      padding: 0 15px;
+      align-items: flex-start;
+      width: auto;
+    }
+
+    & h2 {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 5px;
+    }
+
+    & span {
+      margin-bottom: 24px;
+    }
+
+    & img {
+      width: 100%;
+      height: 97.5vw;
+      margin-bottom: 23px;
+    }
+
+    & p {
+      text-align: start;
+    }
+
+    &__video {
+      position: relative;
+      right: auto;
+      bottom: auto;
+      width: 100%;
+      height: 52.19vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & img {
+        display: block;
+        width: 100%;
+        height: 52.19vw;
+        object-fit: cover;
+      }
+
+      & button {
+        align-items: center;
+        justify-content: center;
+        left: auto;
+        top: auto;
+        transform: translateY(11px);
+      }
+    }
+
+    &__video-preview {
+      width: 100%;
+      height: 52.19vw;
+    }
+  }
+}

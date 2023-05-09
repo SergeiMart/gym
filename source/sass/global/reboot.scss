@@ -30,13 +30,25 @@ html {
 body {
   width: 100%;
   height: 100%;
+  position: relative;
 
   background-color: $color-default-white;
+}
+
+main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 a {
   color: $color-default-black;
   text-decoration: none;
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
 }
 
 img,

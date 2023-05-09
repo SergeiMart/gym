@@ -1,0 +1,257 @@
+.coach {
+  padding-bottom: 140px;
+
+  &__container {
+    position: relative;
+  }
+
+  & h2 {
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #102654;
+    margin: 0;
+    margin-bottom: 47px;
+  }
+
+  &__swiper {
+    width: 84.92vw;
+    max-width: 1160px;
+  }
+
+  &__swiper-wrapper {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  &__swiper-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover h3 {
+      top: 54px;
+      margin: 0;
+      transition: 0.3s;
+      align-items: flex-start;
+      z-index: 1;
+    }
+
+    &:hover .coach__info {
+      top: 0;
+      transition: 0.3s;
+    }
+  }
+
+  & h3 {
+    position: absolute;
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    display: inline-flex;
+    align-items: center;
+    color: #ffffff;
+    top: 84%;
+    margin: 0;
+    transition: 0.3s;
+  }
+
+  &__info {
+    position: absolute;
+    top: 101%;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 38, 84, 0.89);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 58px 45px 50px;
+    justify-content: space-between;
+  }
+
+  & span {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #b6bdcc;
+    margin-top: 18px;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 26px;
+    gap: 13px;
+  }
+
+  &__item {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      position: absolute;
+      left: -16px;
+      top: 7px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@include vp-1199 {
+  .coach {
+    padding-bottom: 100px;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__swiper {
+      width: 73.7vw;
+    }
+
+    & h2 {
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 32px;
+      transform: translateX(-3px);
+    }
+
+    & img {
+      width: 34.9vw;
+      height: 38.28vw;
+    }
+
+    &__swiper-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    &__swiper-slide {
+      width: 34.9vw;
+      height: 38.28vw;
+
+      &:hover h3 {
+        top: 52px;
+        transform: translateX(-4px);
+      }
+    }
+
+    & h3 {
+      top: 83%;
+      transform: translateX(3px);
+    }
+
+    .coach__swiper-button-prev::after,
+    .coach__swiper-button-next::after {
+      font-size: 33px;
+    }
+
+    &__swiper-button-prev {
+      left: 44px;
+      top: 56%;
+    }
+
+    &__swiper-button-next {
+      right: 44px;
+      top: 56%;
+    }
+  }
+}
+
+@include vp-767 {
+  .coach {
+    padding-top: 5px;
+    padding-bottom: 70px;
+
+    &__swiper {
+      width: 70.63vw;
+    }
+
+    & h2 {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 42px;
+    }
+
+    & img {
+      width: 70.63vw;
+      height: 85.63vw;
+    }
+
+    &__swiper-slide {
+      width: 70.63vw;
+      height: 85.63vw;
+
+      &:hover h3 {
+        top: 42px;
+        transform: translateX(0);
+      }
+    }
+
+    & span {
+      margin-top: 20px;
+    }
+
+    & h3 {
+      top: 83%;
+      transform: translateX(3px);
+    }
+
+    &__info {
+      padding: 45px 30px;
+      gap: 32px;
+    }
+
+    &__list {
+      padding-left: 20px;
+      gap: 14px;
+    }
+
+    .coach__swiper-button-prev::after,
+    .coach__swiper-button-next::after {
+      font-size: 20px;
+    }
+
+    &__swiper-button-prev {
+      left: 15px;
+      top: 59%;
+    }
+
+    &__swiper-button-next {
+      right: 15px;
+      top: 59%;
+    }
+  }
+}

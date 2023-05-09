@@ -1,0 +1,165 @@
+.feedback {
+  padding: 17px 0 120px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  & h2 {
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 65px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: #102654;
+    transform: translateX(5px);
+    margin: 0;
+    margin-bottom: 37px;
+  }
+
+  &__swiper {
+    width: 560px;
+  }
+
+  &__swiper-slide {
+    min-height: 242px;
+    background: #1c3374;
+    box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+    padding: 54px 62px 40px 170px;
+    display: flex;
+    position: relative;
+  }
+
+  &__img {
+    position: absolute;
+    top: 62px;
+    left: 62px;
+
+    & img {
+      margin: 0;
+    }
+  }
+
+  & span {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin-bottom: 13px;
+  }
+
+  & p {
+    font-family: "Roboto Condensed", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .coach__swiper-button-prev::after,
+  .coach__swiper-button-next::after {
+    font-size: 33px;
+  }
+
+  &__swiper-button-prev {
+    left: -56px;
+    top: 43%;
+  }
+
+  &__swiper-button-next {
+    right: -56px;
+    top: 43%;
+  }
+}
+
+@include vp-1199 {
+  .feedback {
+    padding-top: 0;
+    padding-bottom: 100px;
+
+    & h2 {
+      font-size: 42px;
+      line-height: 50px;
+      transform: translateX(-2px);
+      margin-bottom: 40px;
+    }
+
+    &__swiper {
+      width: 562px;
+    }
+  }
+}
+
+@include vp-767 {
+  .feedback {
+    padding-top: 0;
+    padding-bottom: 70px;
+
+    & h2 {
+      font-size: 32px;
+      line-height: 38px;
+      transform: translateX(-1px);
+      margin-bottom: 42px;
+    }
+
+    &__swiper {
+      width: 70.63vw;
+    }
+
+    &__swiper-slide {
+      padding: 46px 25px 32px;
+      position: relative;
+    }
+
+    & span {
+      padding-left: 99px;
+      margin-bottom: 24px;
+      line-height: 135%;
+    }
+
+    & p {
+      text-align: center;
+    }
+
+    &__img {
+      position: absolute;
+      margin: 0;
+      top: 12%;
+      left: 41px;
+      width: 68px;
+      height: 68px;
+    }
+
+    .coach__swiper-button-prev::after,
+    .coach__swiper-button-next::after {
+      font-size: 21px;
+    }
+
+    &__swiper-button-prev {
+      left: -31px;
+      top: 47%;
+    }
+
+    &__swiper-button-next {
+      right: -31px;
+      top: 47%;
+    }
+  }
+}
