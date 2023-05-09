@@ -1425,6 +1425,14 @@ button,
   outline: none;
 }
 
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -2481,7 +2489,7 @@ button,
   color: #102654;
   -webkit-text-decoration: underline #d10a42;
           text-decoration: underline #d10a42;
-  text-underline-offset: 18px;
+  text-underline-offset: 20px;
 }
 .sub__tabs-content {
   width: 100%;
