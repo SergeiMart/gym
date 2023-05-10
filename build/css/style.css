@@ -2421,6 +2421,16 @@ button,
 .sub {
   padding: 120px 0;
   background: #f8f9fc;
+  position: relative;
+}
+.sub::after {
+  content: "";
+  background: url("./../img/sub.png");
+  position: absolute;
+  bottom: -68px;
+  right: 0;
+  width: 287px;
+  height: 412px;
 }
 .sub__container {
   display: -webkit-box;
@@ -2662,6 +2672,15 @@ button,
   .sub {
     padding: 100px 0;
   }
+  .sub::after {
+    content: "";
+    background: url("./../img/sub-tablet.png");
+    position: absolute;
+    bottom: -93px;
+    right: 0;
+    width: 347px;
+    height: 412px;
+  }
   .sub h2 {
     font-size: 42px;
     line-height: 50px;
@@ -2714,6 +2733,9 @@ button,
 @media (max-width: 767px) {
   .sub {
     padding: 65px 0 70px;
+  }
+  .sub::after {
+    display: none;
   }
   .sub h2 {
     font-size: 32px;

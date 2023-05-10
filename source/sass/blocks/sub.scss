@@ -1,6 +1,18 @@
 .sub {
   padding: 120px 0;
   background: #f8f9fc;
+  position: relative;
+
+
+  &::after {
+    content: "";
+    background: url("./../img/sub.png");
+    position: absolute;
+    bottom: -68px;
+    right: 0;
+    width: 287px;
+    height: 412px;
+  }
 
   &__container {
     display: flex;
@@ -196,6 +208,16 @@
   .sub {
     padding: 100px 0;
 
+    &::after {
+      content: "";
+      background: url("./../img/sub-tablet.png");
+      position: absolute;
+      bottom: -93px;
+      right: 0;
+      width: 347px;
+      height: 412px;
+    }
+
     & h2 {
       font-size: 42px;
       line-height: 50px;
@@ -240,6 +262,10 @@
 @include vp-767 {
   .sub {
     padding: 65px 0 70px;
+
+    &::after {
+      display: none;
+    }
 
     & h2 {
       font-size: 32px;
