@@ -3238,6 +3238,9 @@ button,
   color: #ffffff;
   position: relative;
 }
+.coach__item p {
+  margin: 0;
+}
 .coach__item::before {
   content: "";
   width: 6px;

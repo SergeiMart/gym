@@ -111,6 +111,10 @@
     color: #ffffff;
     position: relative;
 
+    & p {
+      margin: 0;
+    }
+
     &::before {
       content: "";
       width: 6px;
