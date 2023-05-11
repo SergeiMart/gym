@@ -1755,7 +1755,7 @@ button,
   margin: 0;
   margin-bottom: 48px;
 }
-.intro button {
+.intro a {
   background-color: transparent;
   border: 4px solid #ffffff;
   -webkit-box-sizing: border-box;
@@ -1819,7 +1819,7 @@ button,
     margin-right: 17px;
     min-width: 113px;
   }
-  .intro button {
+  .intro a {
     width: 186px;
   }
 }
@@ -1855,7 +1855,7 @@ button,
   .intro__img {
     display: none;
   }
-  .intro button {
+  .intro a {
     min-width: 290px;
     width: 92%;
     position: absolute;
