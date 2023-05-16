@@ -62,6 +62,10 @@
       align-items: center;
     }
   }
+
+  &__item--first {
+    display: none;
+  }
 }
 
 @include vp-1199 {
@@ -117,7 +121,10 @@
     }
 
     &__list {
-      flex-direction: column;
+      display: grid;
+      grid-template-columns:  1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      column-gap: 76px;
       row-gap: 19px;
 
       & a {
@@ -126,8 +133,8 @@
       }
     }
 
-    &__list--first {
-      margin-top: 39px;
+    &__item--first {
+      display: block;
     }
   }
 }

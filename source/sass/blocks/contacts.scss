@@ -33,7 +33,7 @@
     &::after {
       content: "";
       position: absolute;
-      height: 102px;
+      height: 100%;
       width: 1px;
       background: #74819c;
       right: 43%;
@@ -120,7 +120,7 @@
       &::after {
         right: 43.8%;
         top: 8px;
-        height: 129px;
+        height: 100%;
       }
     }
   }

@@ -38,14 +38,19 @@
     justify-content: center;
 
     &:hover h3 {
-      top: 54px;
-      margin: 0;
-      transition: 0.3s;
-      align-items: flex-start;
-      z-index: 1;
+      display: none;
     }
 
     &:hover .coach__info {
+      top: 0;
+      transition: 0.3s;
+    }
+
+    &:focus h3 {
+      display: none;
+    }
+
+    &:focus .coach__info {
       top: 0;
       transition: 0.3s;
     }
@@ -75,8 +80,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 58px 45px 50px;
-    justify-content: space-between;
+    padding: 53px 38px 50px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+    & h4 {
+      font-family: "Roboto Condensed", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      display: inline-flex;
+      align-items: center;
+      color: #ffffff;
+      margin: 0;
+    }
   }
 
   & span {
@@ -88,7 +106,8 @@
     display: flex;
     align-items: center;
     color: #b6bdcc;
-    margin-top: 18px;
+    margin-top: -3px;
+    margin-bottom: auto;
   }
 
   &__list {
@@ -96,7 +115,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 26px;
+    padding-left: 33px;
     gap: 13px;
   }
 
@@ -177,6 +196,10 @@
       transform: translateX(3px);
     }
 
+    & h4 {
+      transform: translateX(-4px);
+    }
+
     .coach__swiper-button-prev::after,
     .coach__swiper-button-next::after {
       font-size: 33px;
@@ -225,7 +248,11 @@
     }
 
     & span {
-      margin-top: 20px;
+      margin-top: -5px;
+    }
+
+    & h4 {
+      transform: translateX(0);
     }
 
     & h3 {
@@ -234,8 +261,7 @@
     }
 
     &__info {
-      padding: 45px 30px;
-      gap: 32px;
+      padding: 43px 30px;
     }
 
     &__list {

@@ -2,6 +2,10 @@
   padding: 51px 0;
   background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
 
+  @media(max-width:1312px) {
+    padding-top: 90px;
+  }
+
   &__container {
     display: flex;
     flex-wrap: nowrap;
@@ -85,10 +89,6 @@
 @include vp-1199 {
   .intro {
     padding: 82px 0 62px;
-
-    &__container {
-      justify-content: space-between;
-    }
 
     &__info {
       margin-right: 28px;

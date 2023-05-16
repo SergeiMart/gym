@@ -82,10 +82,10 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
     list-style: none;
-    justify-content: space-between;
     gap: 2.93vw;
 
     @include vp-1440 {
@@ -119,6 +119,19 @@
       background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     }
 
+    &:focus {
+      box-sizing: border-box;
+      border: 7px solid #ffffff;
+      border-image: linear-gradient(to right bottom, #d10a42, #00359f);
+      border-image-slice: 1;
+    }
+
+    &:focus button {
+      color: #ffffff;
+      border: 0;
+      background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+    }
+
     & button {
       box-sizing: border-box;
       border: 2px solid #102654;
@@ -137,6 +150,7 @@
       letter-spacing: 0.05em;
       text-transform: uppercase;
       cursor: pointer;
+      color: #102654;
 
       @include hover-focus {
         opacity: 0.8;
@@ -294,6 +308,7 @@
     &__item {
       width: 90.63vw;
       height: 120vw;
+      max-height: 384px;
       padding: 35px 35px 58px;
       justify-content: space-between;
     }
