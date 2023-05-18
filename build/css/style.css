@@ -1715,6 +1715,7 @@ button,
   margin-right: 15px;
   margin-left: 20px;
   margin-top: 116px;
+  width: 113px;
 }
 .intro__info {
   display: -webkit-box;
@@ -2203,7 +2204,7 @@ button,
   position: absolute;
   width: 364px;
   height: 228px;
-  bottom: -115px;
+  top: 288px;
   right: 32.5%;
 }
 .gym__video::before {
@@ -2302,6 +2303,7 @@ button,
   .gym__video {
     width: 266px;
     height: 167px;
+    top: auto;
     bottom: -83px;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -4023,14 +4025,14 @@ button,
       -ms-flex-align: center;
           align-items: center;
   color: #1c3374;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 .offer__item p {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 100%;
+  line-height: 140%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
